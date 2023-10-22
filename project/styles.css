@@ -42,7 +42,7 @@ li {
 }
 
 .head-section {
-    padding: 64px 16px;
+    padding: 0px 16px 64px 16px;
     color: white;
 }
 
@@ -170,3 +170,25 @@ footer div {
 }
 
 
+/* Tablet Layout */
+@media (width >= 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    .head-section {
+        background: 
+            url(./assets/images/bg-pattern-3.svg) -70% no-repeat,
+            url(./assets/images/bg-pattern-2.svg) 120% 110% no-repeat;
+        background-size: 50%, 25%;
+    }
+
+    .purple-bg {
+        padding-bottom: 140px;
+    }
+
+    .phone-img {
+        width: 514px;
+        bottom: 80px;
+    }
+    
+}
