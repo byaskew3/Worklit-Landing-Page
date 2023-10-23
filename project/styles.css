@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    position: relative;
+}
+
 h1, h3 {
     font-family: 'Fraunces 144pt', sans-serif;
     color: #24053E;
@@ -35,11 +39,17 @@ li {
     list-style: none;
 }
 
+li img {
+    margin-left: 20px;
+}
+
 .access-txt {
     font-family: 'manrope', sans-serif;
     font-weight: bold;
     border-bottom: 3px solid #44FFA1;
     line-height: 32px;
+    margin-right: 20px;
+    transition: .5s;
 }
 
 .head-section {
@@ -61,29 +71,33 @@ h1 span {
 
 
 button {
+    cursor: pointer;
+    font-family: 'manrope', sans-serif;
     display: block;
     margin: 0 auto;
     padding: 20px 25px;
     background-color: #44FFA1;
     border: none;
+    color: #24053E;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .5s;
 }
 
-a {
-    color: #24053E;
-    font-family: 'manrope', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
+.phone {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #FCF8FF;
 }
 
 .phone-img {
-    display: inline-block;
     width: 320px;
     margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 140px;
+    top: 320px;
 }
 
 .card-section {
@@ -128,12 +142,13 @@ h3 {
     display: block;
     position: relative;
     top: 60px;
-    width: 80%;
+    width: 343px;
     margin: 100px auto 0 auto;
     z-index: -1;
 }
 
 .founder-section div {
+    position: absolute;
     background-color: #24053E;
     text-align: center;
     padding: 32px;
@@ -151,8 +166,10 @@ h3 {
 footer {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     padding: 40px 0;
+    top: 360px;
 }
 
 footer img {
@@ -186,7 +203,7 @@ footer div {
 
     .phone-img {
         width: 514px;
-        bottom: 80px;
+        top: 380px;
     }
 
     .card {
@@ -204,20 +221,27 @@ footer div {
         margin: 30px 30px 0 110px;
     }
 
+    .founder-section {
+        margin: 0 auto;
+        position: relative;
+    }
+
     .founder-section img {
         width: 265px;
-        margin: 0 0 0 40px;
-        top: 120px;
-        left: 20px;
+        margin: 0;
+        position: absolute;
+        left: 40px;
+        right: 0;
     }
 
     .founder-section div {
+        position: absolute;
         background: url(./assets/images/bg-pattern-3.svg) 100% 220% no-repeat;
         background-size: 50%;
         background-color: #24053E;
         width: 514px;
-        margin-left: auto;
-        margin-right: 40px;
+        left: 200px;
+        top: 200px;
     }
 
     .founder-section h3 {
@@ -234,5 +258,123 @@ footer div {
     .founder-section button {
         margin: 0;
         margin-left: 36px;
+    }
+
+    footer {
+        top: 600px;
+    }
+}
+
+/* Desktop Layout */
+@media (width >= 1440px) {
+    li {
+        cursor: pointer;
+    }
+    
+    .flex li {
+        margin-left: 140px;
+    }
+
+    .access-txt {
+        margin-right: 140px;
+    }
+
+    .access-txt:hover {
+        color: #44FFA1;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+
+
+    button:hover {
+        background-color: #24053E;
+        color: #44FFA1;
+
+        border: 3px solid #44FFA1;
+    }
+
+    a:hover {
+        color: #44FFA1;
+    }
+
+    .phone-img { 
+        width: 767px;
+        top: 380px;
+        left: 100px;
+    }
+
+    .card-section {
+        padding-top: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .num {
+        margin: 40px 0;
+    }
+
+    .card-info {
+        width: 354px;
+    }
+
+    h3, .desc {
+        text-align: center;
+    }
+
+    h3 {
+        margin: 0;
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    .desc {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+
+    .founder-section img {
+        width: 450px;
+        left: 200px;
+    }
+
+    .founder-section div {
+        width: 730px;
+        height: 475px;
+        top: 220px;
+        left: 560px;
+    }
+
+    .founder-section h3 {
+        text-align: start;
+    }
+
+    .founder-section h3, 
+    .founder-section p,
+    .founder-section button {
+        margin: 40px 20px;
+    }
+
+    .founder-section h3 {
+        font-size: 56px;
+    }
+
+    .founder-section p {
+        font-size: 18px;
+        margin-right: 80px;
+    }
+
+    .founder-section button {
+        margin-top: 40px;
+    }
+
+    footer {
+        top: 800px;
     }
 }
