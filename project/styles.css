@@ -36,6 +36,7 @@ li {
 }
 
 .access-txt {
+    font-family: 'manrope', sans-serif;
     font-weight: bold;
     border-bottom: 3px solid #44FFA1;
     line-height: 32px;
@@ -99,17 +100,14 @@ a {
 
 .num {
     font-family: 'Fraunces 144pt', sans-serif;
-    display: inline-block;
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 50%
-}
-
-.num-circle {
-    margin: 20px auto;
-    width: 60px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    line-height: 26px;
     border: 1px solid #584D62;
+    margin: 0 auto;
 }
 
 h3 {
@@ -190,5 +188,51 @@ footer div {
         width: 514px;
         bottom: 80px;
     }
-    
+
+    .card {
+        display: flex;
+        align-items: center;
+    }
+
+    h3, .desc {
+        text-align: start;
+        margin-right: 90px;
+        margin-left: 0;
+    }
+
+    .num {
+        margin: 30px 30px 0 110px;
+    }
+
+    .founder-section img {
+        width: 265px;
+        margin: 0 0 0 40px;
+        top: 120px;
+        left: 20px;
+    }
+
+    .founder-section div {
+        background: url(./assets/images/bg-pattern-3.svg) 100% 220% no-repeat;
+        background-size: 50%;
+        background-color: #24053E;
+        width: 514px;
+        margin-left: auto;
+        margin-right: 40px;
+    }
+
+    .founder-section h3 {
+        font-size: 48px;
+        margin-left: 20px;
+    }
+
+    .founder-section p {
+        text-align: start;
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+    .founder-section button {
+        margin: 0;
+        margin-left: 36px;
+    }
 }
